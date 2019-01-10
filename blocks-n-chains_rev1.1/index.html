@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>blocks'n'chains</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <style>
+      .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                                          supported by Chrome and Opera */
+      }
+
+      #button {
+        font-size: 36px;
+        padding: 14px 40px;
+        background-color: cadetblue;
+        color: bisque;
+        border-radius: 12px;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        display: none;
+        width: 600px;
+        margin-top: 150px;
+      }
+
+      #title {
+        color: rgb(33, 114, 124);
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-shadow: 2px 2px 10px rgb(211, 211, 211);
+      }
+
+      #alert {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+    </style>
+    <div>
+      <input
+        type="button"
+        id="button"
+        name="invitation"
+        value="Let's start"
+        onclick="showDiv(), hideDiv()"
+      />
+    </div>
+    <div class="noselect" style="display:block;" id="program">
+      <h1 id="title">Let's make some blocks'n'chains</h1>
+      <canvas
+        id="canvas"
+        width="600"
+        height="300"
+        style="border:black 2px solid;"
+      ></canvas>
+    </div>
+    <div class="noselect" style="display:block;" id="alert"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
